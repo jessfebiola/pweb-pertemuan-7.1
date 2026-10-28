@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSpace - Halaman Konten</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f6f9;
+            color: #263238;
+        }
+
+        .navbar {
+            background-color: #173b57;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #173b57, #347b91);
+            color: white;
+            padding: 45px 0;
+        }
+
+        .sidebar-card,
+        .feature-card,
+        .article-card {
+            border: none;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        }
+
+        .feature-card {
+            transition: transform 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 35px;
+        }
+
+        footer {
+            background-color: #173b57;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header dan Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">TechSpace</a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu"
+                    aria-label="Buka navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#konten">Konten</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#artikel">Artikel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="home">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Explore the World of Technology</h1>
+            <p class="lead mb-0">
+                Temukan informasi, inspirasi, dan perkembangan teknologi terbaru.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <!-- Sidebar -->
+            <aside class="col-md-3">
+                <div class="card sidebar-card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Getting Started</h5>
+                        <p class="card-text text-secondary">
+                            Pelajari dasar-dasar teknologi dan pemrograman.
+                        </p>
+                        <a href="#artikel" class="btn btn-outline-primary btn-sm">
+                            Pelajari
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card sidebar-card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text text-secondary">
+                            Kenali HTML, CSS, JavaScript, dan Bootstrap.
+                        </p>
+                        <a href="#webdev" class="btn btn-outline-primary btn-sm">
+                            Jelajahi
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card sidebar-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Programming</h5>
+                        <p class="card-text text-secondary">
+                            Tingkatkan kemampuan coding melalui latihan.
+                        </p>
+                        <a href="#programming"
+                           class="btn btn-outline-primary btn-sm">
+                            Mulai
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Konten Utama -->
+            <main class="col-md-9" id="konten">
+                <h2 class="fw-bold mb-1">Konten</h2>
+                <p class="text-secondary mb-4">
+                    Jelajahi topik teknologi pilihan kami.
+                </p>
+
+                <div class="row g-4">
+
+                    <!-- Feature 1 -->
+                    <div class="col-md-6" id="webdev">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">💻</div>
+                                <h4 class="card-title">Web Development</h4>
+                                <p class="card-text">
+                                    Pelajari cara membuat website responsif
+                                    dengan HTML, CSS, JavaScript, dan Bootstrap.
+                                </p>
+                                <a href="https://getbootstrap.com/docs/5.3/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="btn btn-primary">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="col-md-6" id="programming">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">🚀</div>
+                                <h4 class="card-title">Programming</h4>
+                                <p class="card-text">
+                                    Kembangkan logika dan kemampuan pemrograman
+                                    untuk menyelesaikan berbagai masalah.
+                                </p>
+                                <a href="#artikel" class="btn btn-success">
+                                    Get Started
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Artikel Utama -->
+                <article class="card article-card mt-4" id="artikel">
+                    <div class="card-body p-4">
+                        <span class="badge text-bg-primary mb-2">
+                            Featured Article
+                        </span>
+
+                        <h3 class="fw-bold">Mengapa Belajar Bootstrap?</h3>
+
+                        <p class="text-secondary">
+                            Bootstrap merupakan framework front-end yang
+                            menyediakan komponen dan sistem grid untuk
+                            membangun tampilan website secara efisien.
+                            Dengan memanfaatkan class yang tersedia,
+                            developer dapat membuat navbar, card, tombol,
+                            form, dan layout responsif tanpa menulis seluruh
+                            CSS dari awal.
+                        </p>
+
+                        <p>
+                            Salah satu keunggulan Bootstrap adalah sistem
+                            grid yang memudahkan pengaturan layout pada
+                            berbagai ukuran layar, mulai dari smartphone
+                            hingga desktop.
+                        </p>
+
+                        <a href="https://getbootstrap.com/docs/5.3/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Baca dokumentasi Bootstrap →
+                        </a>
+                    </div>
+                </article>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 mt-4" id="footer">
+        <div class="container">
+            <div class="row align-items-center g-3">
+                <div class="col-md-6">
+                    <h5 class="fw-bold">TechSpace</h5>
+                    <small>
+                        © 2026 TechSpace. All rights reserved.
+                    </small>
+                </div>
+
+                <div class="col-md-6 text-md-end">
+                    <a href="#home"
+                       class="text-white text-decoration-none me-3">Home</a>
+                    <a href="#artikel"
+                       class="text-white text-decoration-none me-3">Artikel</a>
+                    <a href="mailto:hello@techspace.example"
+                       class="text-white text-decoration-none">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
